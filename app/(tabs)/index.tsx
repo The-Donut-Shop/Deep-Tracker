@@ -1,5 +1,6 @@
 import { Stack } from 'expo-router';
-import { SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function LandingPage() {
   return (
@@ -36,7 +37,7 @@ const styles = StyleSheet.create({
     paddingBottom: 40,
   },
   button: {
-    backgroundColor: '#4285F4', // Google blue
+    backgroundColor: '#4285F4',
     padding: 16,
     borderRadius: 8,
     alignItems: 'center',
